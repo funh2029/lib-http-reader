@@ -47,15 +47,15 @@ const FRAGMENT_MAX:usize = CHUNK_SIZE/10;
 
 pub struct HttpReader {
     // url: String,
-    len: usize,
-    etag: String,
-    pos: u64,
-    reqbuilder: RequestBuilder,
-    cache: LruCache<usize, Vec<u8>>,
-    httpcache_base: usize,
-    httpcache: Option<Vec<u8>>,
-    HTTPCACHE_SIZE: u32,
-    PRECACHE_SIZE: u32,
+    pub len: usize,
+    pub etag: String,
+    pub pos: u64,
+    pub reqbuilder: RequestBuilder,
+    pub cache: LruCache<usize, Vec<u8>>,
+    pub httpcache_base: usize,
+    pub httpcache: Option<Vec<u8>>,
+    pub HTTPCACHE_SIZE: u32,
+    pub PRECACHE_SIZE: u32,
     }
 
 

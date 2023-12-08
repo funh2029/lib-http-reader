@@ -1,2 +1,6 @@
-/target
-/Cargo.lock
+*
+!.gitignore
+!LICENSE
+!README.md
+!Cargo.toml
+!src/*
